@@ -4,9 +4,31 @@ import { FaTwitter } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 
 
+type CardOne = {
+    picture: string;
+    heading: string;
+    className?: string;
+}
+type CardTwo = {
+    picture1: string;
+    subHeading: string;
+    heading1: string;
+    className?: string;
+}
+type CardThree = {
+    image: string;
+    name: string;
+    work: string;
+    className?: string;
+}
+type CardFour = {
+    picture: string;
+    heading: string;
+    subHeading: string;
+    className?: string;
+}
 
-
-const CardOne = ({ picture, heading, className }: any) => {
+const CardOne = ({ picture, heading, className }: CardOne) => {
     return (
         <div className={className} >
 
@@ -29,7 +51,7 @@ export default CardOne
 
 
 
-export function CardTwo({ picture1, subHeading, heading1, className }: any) {
+export function CardTwo({ picture1, subHeading, heading1, className }: CardTwo) {
     return (
 
         <div className={`${className} w-full rounded-[8px] grid gap-[24px] bg-[#F7F7F7] mt-12 hover:shadow-xl transition-shadow duration-300 shadow-md hover:border-gray-400 border-opacity-50`}>
@@ -55,7 +77,7 @@ export function CardTwo({ picture1, subHeading, heading1, className }: any) {
 
 
 
-export function CardThree({ image, name, work, className }: any) {
+export function CardThree({ image, name, work, className }: CardThree) {
     return (
 
         <div className={`${className} grid gap-[24px] items-center justify-center text-center lg:w-full md:w-full `}>
@@ -81,14 +103,14 @@ export function CardThree({ image, name, work, className }: any) {
 
 import React from 'react'
 
-export function CardFour({ picture, heading, subHeading, className }: any) {
+export function CardFour({ picture, heading, subHeading, className }: CardFour) {
     return (
         <div className={className}>
             <div className="w-full border-[1px] p-[32px] grid gap-[24px] border-black mt-4 hover:shadow-xl transition-shadow duration-300 shadow-md hover:border-gray-400 border-opacity-50 ">
 
                 <Image src={"/images/review/Stars.svg"} alt="Stars" width={100} height={100} className="" />
 
-                <p className="font-[400] text-[18px] leading-[27px]" >"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                <p className="font-[400] text-[18px] leading-[27px]" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
 
                 <div className="flex items-center">
 

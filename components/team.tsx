@@ -1,4 +1,3 @@
-import React, { use } from 'react'
 import { CardThree } from './Card'
 import { useState } from 'react'
 

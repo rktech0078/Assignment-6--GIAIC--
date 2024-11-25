@@ -6,7 +6,7 @@
       <div className='w-full px-[24px] py-[48px] lg:bg-[#F7F7F7] lg:w-full lg:flex lg:justify-between lg:items-center'>
 
           <div className='flex'>
-              <h1 className='font-[700] text-[18px] leading-[27px] lg:hidden'>Trusted by the world's best companies <span className='block'>[social proof to build credibility]</span> </h1>
+              <h1 className='font-[700] text-[18px] leading-[27px] lg:hidden'>Trusted by the worlds best companies <span className='block'>[social proof to build credibility]</span> </h1>
               <h1 className='hidden lg:block font-[700] text-[24px]'>Trusted by 2000+ companies worldwide.</h1>
           </div>
 

@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer3() {
-  let className = {
+  const className = {
     paragraph:"text-[14px] underline hover:font-bold"
   }
   return (
